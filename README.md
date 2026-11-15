@@ -32,11 +32,15 @@ A photograph of the waveform generator PCB is shown in Fig. 1. The bare PCB was 
   <img src="images/waveform_generator_PCB.png" alt="PCB">
   <figcaption><b>Figure 1:</b> Printed circuit board of the waveform generator.</figcaption>
 </figure>
+<br>
+<br>
 
 <figure style="margin-bottom: 40px;">
   <img src="images/waveform_generator_stackup.png" alt="PCB_stackup">
   <figcaption><b>Figure 2:</b> PCB stackup (DigiKey DKRed four-layer stackup).</figcaption>
 </figure>
+<br>
+<br>
 
 All surface-mount components were selected in 0603 or larger package sizes, and all IC packages were chosen without a central exposed pad and with a lead pitch of at least 0.5 mm. These choices make manual PCB assembly easier if necessary. 
 
@@ -91,6 +95,8 @@ The waveform generator board supports two rotary encoders for adjusting frequenc
   <img src="images/rotary_encoder_diagram.png" alt="rotary_encoder">
   <figcaption><b>Figure 3:</b> Connection diagram of the rotary encoders for a standalone waveform generator.</figcaption>
 </figure>
+<br>
+<br>
 
 In standalone operation, the generator remains within the frequency and gain limits preset in the firmware. The default limits are listed below and can be modified in the firmware source code:
 
@@ -118,6 +124,8 @@ Fig. 4 shows the sinusoidal output level versus frequency at different gain sett
   <img src="images/frequency_sweep.png" alt="frequency_sweep">
   <figcaption><b>Figure 4:</b> Output signal level vs. frequency.</figcaption>
 </figure>
+<br>
+<br>
 
 Fig. 5 shows the sinusoidal output level versus gain setting at different frequencies. The generator provides approximately 50 dB of linear gain-control range up to 100 kHz. Beginning near 1 MHz, this range decreases, reaching approximately 35 dB at 2 MHz.
 
@@ -125,6 +133,8 @@ Fig. 5 shows the sinusoidal output level versus gain setting at different freque
   <img src="images/gain_sweep.png" alt="gain_sweep">
   <figcaption><b>Figure 5:</b> Output signal level vs. gain setting.</figcaption>
 </figure>
+<br>
+<br>
 
 The output spectra of sinusoidal signals at different frequencies are shown in Figs. 6a–6e. The gain setting for these measurements was 2048 (half scale). 
 
@@ -132,26 +142,36 @@ The output spectra of sinusoidal signals at different frequencies are shown in F
   <img src="images/spectrum_1E4_2048.png" alt="spectrum_1E4">
   <figcaption><b>Figure 6a:</b> Harmonic levels at 10 kHz (gain: 2048).</figcaption>
 </figure>
+<br>
+<br>
 
 <figure style="margin-bottom: 40px;">
   <img src="images/spectrum_1E5_2048.png" alt="spectrum_1E5">
   <figcaption><b>Figure 6b:</b> Harmonic levels at 100 kHz (gain: 2048).</figcaption>
 </figure>
+<br>
+<br>
 
 <figure style="margin-bottom: 40px;">
   <img src="images/spectrum_1E6_2048.png" alt="spectrum_1E6">
   <figcaption><b>Figure 6c:</b> Harmonic levels at 1 MHz (gain: 2048).</figcaption>
 </figure>
+<br>
+<br>
 
 <figure style="margin-bottom: 40px;">
   <img src="images/spectrum_2E6_2048.png" alt="spectrum_2E6">
   <figcaption><b>Figure 6d:</b> Harmonic levels at 2 MHz (gain: 2048).</figcaption>
 </figure>
+<br>
+<br>
 
 <figure style="margin-bottom: 40px;">
   <img src="images/spectrum_10E6_2048.png" alt="spectrum_10E6">
   <figcaption><b>Figure 6e:</b> Harmonic levels at 10 MHz (gain: 2048).</figcaption>
 </figure>
+<br>
+<br>
 
 ---
 
@@ -176,11 +196,15 @@ The following figures show FSK and binary PSK (BPSK) test results obtained using
   <img src="images/modulation_test_fsk.png" alt="fsk_modulation">
   <figcaption><b>Figure 7:</b> FSK modulation test of the waveform generator.</figcaption>
 </figure>
+<br>
+<br>
 
 <figure style="margin-bottom: 40px;">
   <img src="images/modulation_test_bpsk.png" alt="psk_modulation">
   <figcaption><b>Figure 8:</b> BPSK modulation test of the waveform generator.</figcaption>
 </figure>
+<br>
+<br>
 
 ---
 
@@ -241,6 +265,8 @@ The GUI and hardware API were developed using **Python 3.9** on **Linux**. The r
   <img src="images/waveform_generator_gui.png" alt="gui">
   <figcaption><b>Figure 9:</b> GUI of the waveform generator.</figcaption>
 </figure>
+<br>
+<br>
 
 In the GUI, each register control provides a dial knob and a keyboard entry field. The up/down arrow keys and Page Up/Page Down keys adjust the dial values in normal and larger steps, respectively. The small selector buttons below the frequency display change the tuning multiplier for the frequency dial.
 
