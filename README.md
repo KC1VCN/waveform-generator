@@ -26,16 +26,25 @@ The following sections provide more details about the circuit design, PCB implem
 
 ## Printed Circuit Board
 
-A photograph of the waveform generator PCB is shown in Fig. 1. The bare PCB was manufactured through DigiKey's DKRed program using a four-layer stackup (www.digikey.com). The stackup is shown in Fig. 2.
+Photographs of the waveform generator PCB is shown in Figs. 1a–b. The bare PCB was manufactured through DigiKey's DKRed program using a four-layer stackup (www.digikey.com).
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/waveform_generator_PCB.png" alt="PCB">
-  <figcaption><b>Figure 1:</b> Printed circuit board of the waveform generator.</figcaption>
+  <figcaption><b>Figure 1a:</b> Printed circuit board of the waveform generator.</figcaption>
 </figure>
 <br>
 <br>
 
-<figure style="margin-bottom: 40px;">
+<figure>
+  <img src="images/waveform_generator_PCB2.png" alt="PCB2">
+  <figcaption><b>Figure 1b:</b> Waveform generator attached to Arduino UNO R3.</figcaption>
+</figure>
+<br>
+<br>
+
+The stackup of the PCB is shown in Fig. 2.
+
+<figure>
   <img src="images/waveform_generator_stackup.png" alt="PCB_stackup">
   <figcaption><b>Figure 2:</b> PCB stackup (DigiKey DKRed four-layer stackup).</figcaption>
 </figure>
@@ -91,7 +100,7 @@ To generate the negative supply voltage required by the AD8062 op-amp, the Analo
 
 The waveform generator board supports two rotary encoders for adjusting frequency and amplitude when configured as a standalone audio signal generator. One suitable example is the Bourns `PEC09-2315F-N0015` rotary encoder. The connection diagram for the encoders is shown in Fig. 3.
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/rotary_encoder_diagram.png" alt="rotary_encoder">
   <figcaption><b>Figure 3:</b> Connection diagram of the rotary encoders for a standalone waveform generator.</figcaption>
 </figure>
@@ -120,7 +129,7 @@ This section presents basic measurement results for the waveform generator. All 
 
 Fig. 4 shows the sinusoidal output level versus frequency at different gain settings. For a given gain setting, the output level remains nearly constant up to 2 MHz. Above 2 MHz, the level begins to decrease due to the limited bandwidth of the signal chain.
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/frequency_sweep.png" alt="frequency_sweep">
   <figcaption><b>Figure 4:</b> Output signal level vs. frequency.</figcaption>
 </figure>
@@ -129,44 +138,44 @@ Fig. 4 shows the sinusoidal output level versus frequency at different gain sett
 
 Fig. 5 shows the sinusoidal output level versus gain setting at different frequencies. The generator provides approximately 50 dB of linear gain-control range up to 100 kHz. Beginning near 1 MHz, this range decreases, reaching approximately 35 dB at 2 MHz.
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/gain_sweep.png" alt="gain_sweep">
   <figcaption><b>Figure 5:</b> Output signal level vs. gain setting.</figcaption>
 </figure>
 <br>
 <br>
 
-The output spectra of sinusoidal signals at different frequencies are shown in Figs. 6a–6e. The gain setting for these measurements was 2048 (half scale). 
+The output spectra of sinusoidal signals at different frequencies are shown in Figs. 6a–e. The gain setting for these measurements was 2048 (half scale). 
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/spectrum_1E4_2048.png" alt="spectrum_1E4">
   <figcaption><b>Figure 6a:</b> Harmonic levels at 10 kHz (gain: 2048).</figcaption>
 </figure>
 <br>
 <br>
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/spectrum_1E5_2048.png" alt="spectrum_1E5">
   <figcaption><b>Figure 6b:</b> Harmonic levels at 100 kHz (gain: 2048).</figcaption>
 </figure>
 <br>
 <br>
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/spectrum_1E6_2048.png" alt="spectrum_1E6">
   <figcaption><b>Figure 6c:</b> Harmonic levels at 1 MHz (gain: 2048).</figcaption>
 </figure>
 <br>
 <br>
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/spectrum_2E6_2048.png" alt="spectrum_2E6">
   <figcaption><b>Figure 6d:</b> Harmonic levels at 2 MHz (gain: 2048).</figcaption>
 </figure>
 <br>
 <br>
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/spectrum_10E6_2048.png" alt="spectrum_10E6">
   <figcaption><b>Figure 6e:</b> Harmonic levels at 10 MHz (gain: 2048).</figcaption>
 </figure>
@@ -192,14 +201,14 @@ The second parameter is the microcontroller clock frequency, which affects the s
 
 The following figures show FSK and binary PSK (BPSK) test results obtained using the waveform generator PCB.
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/modulation_test_fsk.png" alt="fsk_modulation">
   <figcaption><b>Figure 7:</b> FSK modulation test of the waveform generator.</figcaption>
 </figure>
 <br>
 <br>
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/modulation_test_bpsk.png" alt="psk_modulation">
   <figcaption><b>Figure 8:</b> BPSK modulation test of the waveform generator.</figcaption>
 </figure>
@@ -261,7 +270,7 @@ The GUI and hardware API were developed using **Python 3.9** on **Linux**. The r
 | pyserial    | 3.5     |
 
 
-<figure style="margin-bottom: 40px;">
+<figure>
   <img src="images/waveform_generator_gui.png" alt="gui">
   <figcaption><b>Figure 9:</b> GUI of the waveform generator.</figcaption>
 </figure>
